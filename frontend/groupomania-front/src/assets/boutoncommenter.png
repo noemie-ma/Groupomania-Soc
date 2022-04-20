@@ -1,0 +1,481 @@
+<Language language="Chinese Traditional(ä¸­åœ‹é¦™æ¸¯)">
+	<Default>
+		<Font From="Microsoft JhengHei UI" To="Tahoma" FailTo="Arial" />
+	</Default>
+	<Dialog ClassName="Recoverit90">
+		<Control ClassName="BootableTotalDesc" ControlType="11">
+			<Text>
+				<![CDATA[ç¸½éŽç¨‹:]]>
+			</Text>
+		</Control>
+		<Control ClassName="BootableStartFrame1" ControlType="1">
+			<Text>
+				<![CDATA[å¾žç„¡æ³•æ­£å¸¸å•Ÿå‹•çš„é›»è…¦ä¸­æ¢å¾©æ–‡ä»¶ï¼š]]>
+			</Text>
+		</Control>
+		<Control ClassName="BootableStartFrame2" ControlType="1">
+			<Text>
+				<![CDATA[å»ºç«‹å¯å•Ÿå‹•çš„USB]]>
+			</Text>
+		</Control>
+		<Control ClassName="BootableStartFrame3" ControlType="1">
+			<Text>
+				<![CDATA[è¨­ç½®ç„¡æ³•æ­£å¸¸å•Ÿå‹•çš„PCå•Ÿå‹•é¸é …]]>
+			</Text>
+		</Control>
+		<Control ClassName="BootableStartFrame4" ControlType="1">
+			<Text>
+				<![CDATA[å¾žç„¡æ³•æ­£å¸¸å•Ÿå‹•çš„PCæ¢å¾©æ–‡ä»¶]]>
+			</Text>
+		</Control>
+		<Control ClassName="BootableStartFrame5" ControlType="1">
+			<Text>
+				<![CDATA[<a href="#"><font color=#00B0F5>è«‹åƒé–±å½±ç‰‡æŒ‡å—</font></a>]]>
+			</Text>
+		</Control>
+		<Control ClassName="BootableTotalFinish1" ControlType="1">
+			<Text>
+				<![CDATA[è¨­ç½®ç„¡æ³•æ­£å¸¸å•Ÿç”¨çš„é›»è…¦ä»¥ä½¿ç”¨å¯å•Ÿå‹•é©…å‹•å™¨å•Ÿå‹•ï¼š]]>
+			</Text>
+		</Control>
+		<Control ClassName="BootableTotalFinish2" ControlType="1">
+			<Text>
+				<![CDATA[æ­¥é©Ÿ1ï¼šå°‡USBæ’å…¥ç„¡æ³•æ­£å¸¸å•Ÿå‹•çš„é›»è…¦]]>
+			</Text>
+		</Control>
+		<Control ClassName="BootableTotalFinish3" ControlType="1">
+			<Text>
+				<![CDATA[æ­¥é©Ÿ2ï¼šèª¿æ•´BIOSä»¥å¾žUSBå¼•å°Ž]]>
+			</Text>
+		</Control>
+		<Control ClassName="BootableTotalFinish4" ControlType="1">
+			<Text>
+				<![CDATA[<a href="#"><font color=#00B0F5>è«‹åƒè€ƒå½±ç‰‡æŒ‡å—</font></a>]]>
+			</Text>
+		</Control>
+		<Control ClassName="m_cancelBtn" ControlType="13">
+			<Text>
+				<![CDATA[å–æ¶ˆ]]>
+			</Text>
+		</Control>
+		<Control ClassName="m_sureButton" ControlType="13">
+			<Text>
+				<![CDATA[ç¢ºå®š]]>
+			</Text>
+		</Control>
+		<Control ClassName="m_pEnterButton" ControlType="1">
+			<Text>
+				<![CDATA[å»ºç«‹å¯å•Ÿå‹•é …ç›®]]>
+			</Text>
+		</Control>
+		<Control ClassName="copynotwrite" ControlType="11">
+			<Text>
+				<![CDATA[ç£ç¢Ÿç„¡æ³•å¯«å…¥ï¼Œè«‹æª¢æŸ¥ç£ç¢Ÿ]]>
+			</Text>
+		</Control>
+		<Control ClassName="ScanLostDiskStopDescHome" ControlType="11">
+			<Text>
+				<![CDATA[æ˜¯å¦è¦é€€å‡ºä¸¦è¿”å›žé¦–é ï¼Ÿ]]>
+			</Text>
+		</Control>
+		<Control ClassName="ReportToUs1" ControlType="11">
+			<Text>
+				<![CDATA[å•é¡Œä»ç„¶å­˜åœ¨å—Žï¼Ÿ<a href="#"><Font color="#00B0F5">é»žæ“Šé€™è£¡</Font></a>è¯ç¹«æˆ‘å€‘ã€‚]]>
+			</Text>
+		</Control>
+		<Control ClassName="ReportToUs2" ControlType="11">
+			<Text>
+				<![CDATA[å˜—è©¦æ›´æ”¹å½±ç‰‡ç¯„ä¾‹ï¼Œç„¶å¾Œå†æ¬¡ä¿®å¾©ã€‚å¦‚æžœå•é¡Œä»ç„¶å­˜åœ¨ï¼Œè«‹<a href="#"><Font color="#00B0F5">é»žæ“Šæ­¤è™•</Font></a>è¯ç¹«æˆ‘å€‘]]>
+			</Text>
+		</Control>
+		<Control ClassName="ReportToUs3" ControlType="11">
+			<Text>
+				<![CDATA[å»ºç«‹å¤±æ•—ï¼Œè«‹æª¢æŸ¥æ‚¨çš„è¨­å‚™æ˜¯å¦æ­£ç¢ºé€£æŽ¥ï¼Œæˆ–ç«‹å³è¯ç¹«æˆ‘å€‘<a href="#"><Font color="#00B0F5"></Font></a>ã€‚]]>
+			</Text>
+		</Control>
+		<Control ClassName="ReportToUs4" ControlType="11">
+			<Text>
+				<![CDATA[é‡æ–°æŽƒæä¸èƒ½è§£æ±ºå•é¡Œï¼Ÿ<a href="#"><Font color="#00B0F5">é»žæ“Šé€™è£¡</Font></a>è¯ç¹«ã€‚]]>
+			</Text>
+		</Control>
+		<Control ClassName="ReportToUs5" ControlType="11">
+			<Text>
+				<![CDATA[éœ€è¦ç¶²è·¯é€£æŽ¥æ‰èƒ½å•Ÿå‹•ç¨‹å¼ã€‚è«‹æª¢æŸ¥æ‚¨çš„ç¶²çµ¡æˆ–è¯ç¹«æ‚¨çš„ITç®¡ç†å“¡ï¼Œæ‚¨ä¹Ÿå¯ä»¥è¯ç¹«æˆ‘å€‘<a href="#"><Font color="#00B0F5"></Font></a>ã€‚]]>
+			</Text>
+		</Control>
+		<Control ClassName="ReportToUs6" ControlType="11">
+			<Text>
+				<![CDATA[æ‚¨å°Recoveritä»€éº¼åœ°æ–¹ä¸æ»¿æ„ï¼Ÿå’Œæˆ‘å€‘<a href="#"><Font color="#00B0F5">åˆ†äº«</Font></a>å¯ä»¥å¹«æˆ‘å€‘å¤§å¿™ï¼]]>
+			</Text>
+		</Control>
+		<Control ClassName="ReportToUs7" ControlType="11">
+			<Text>
+				<![CDATA[æ²’æœ‰ç¶²çµ¡é€£æŽ¥]]>
+			</Text>
+		</Control>
+		<Control ClassName="ReportToUs8" ControlType="11">
+			<Text>
+				<![CDATA[å“¦ï¼Œä¸...æˆ‘å€‘ç„¡æ³•é€£æŽ¥åˆ°ç¶²è·¯ã€‚ è«‹æª¢æŸ¥æ‚¨çš„é€£ç·šï¼Œç„¶å¾Œé‡è©¦ã€‚]]>
+			</Text>
+		</Control>
+	</Dialog>
+	<Dialog ClassName="Bootable">
+		<Control ClassName="bootoverruns" ControlType ="11" >
+			<Text>
+				<![CDATA[æ­¤ USB é©…å‹•å™¨çš„å…§å­˜å¤ªå¤§ï¼Œç„¡æ³•è£½ä½œå¯å•Ÿå‹•é©…å‹•å™¨ã€‚<br><br><br>æ³¨æ„ï¼šæ›ä¸€å€‹64GBä»¥ä¸‹çš„Uç›¤å†è©¦ã€‚]]>
+			</Text>
+		</Control>
+		<Control ClassName="bootGotit" ControlType ="11" >
+			<Text>
+				<![CDATA[äº†è§£]]>
+			</Text>
+		</Control>
+		<Control ClassName="bootCreating" ControlType ="1" >
+			<Text>
+				<![CDATA[å‰µå»ºå¯å•Ÿå‹•çš„USBé©…å‹•ï¼Œè«‹è€å¿ƒç­‰å¾…â€¦]]>
+			</Text>
+		</Control>
+		<Control ClassName="bootregisterneedpaln" ControlType ="1" >
+			<Text>
+				<![CDATA[ä½ çš„è»Ÿé«”æ²’æœ‰è¨»å†Šï¼Œé¸æ“‡ä½ éœ€è¦çš„ç‰ˆæœ¬]]>
+			</Text>
+		</Control>
+		<Control ClassName="bootBasic" ControlType ="1" >
+			<Text>
+				<![CDATA[Data Recovery]]>
+			</Text>
+		</Control>
+		<Control ClassName="bootPro" ControlType ="1" >
+			<Text>
+				<![CDATA[Data Recovery Pro]]>
+			</Text>
+		</Control>
+		<Control ClassName="bootcreateboot" ControlType ="1" >
+			<Text>
+				<![CDATA[å»ºç«‹ä¸€å€‹é–‹æ©Ÿç£ç¢Ÿç”¨ä¾†æ¢å¾©ç³»çµ±ç„¡æ³•å•Ÿå‹•PSçš„è³‡æ–™]]>
+			</Text>
+		</Control>
+		<Control ClassName="bootStart" ControlType ="13" >
+			<Text>
+				<![CDATA[é–‹å§‹]]>
+			</Text>
+		</Control>
+		<Control ClassName="bootselectmode" ControlType ="1" >
+			<Text>
+				<![CDATA[è«‹é¸æ“‡USBé©…å‹•å™¨ä»¥å»ºç«‹å¯å•Ÿå‹•çš„åª’é«”é©…å‹•å™¨ï¼Œä¸¦ä½¿ç”¨è©²å¯å•Ÿå‹•åª’é«”é©…å‹•å™¨å•Ÿå‹•ç„¡æ³•æ­£å¸¸å•Ÿå‹•çš„é›»è…¦ï¼š]]>
+			</Text>
+		</Control>
+		<Control ClassName="bootcreateusb" ControlType ="1" >
+			<Text>
+				<![CDATA[å»ºç«‹å¯å¼•å°Žçš„USB]]>
+			</Text>
+		</Control>
+		<Control ClassName="bootcreateusbdisk" ControlType ="1" >
+			<Text>
+				<![CDATA[è«‹æ’å…¥USB]]>
+			</Text>
+		</Control>
+		<Control ClassName="bootcreate" ControlType ="13" >
+			<Text>
+				<![CDATA[æ–°å»º]]>
+			</Text>
+		</Control>
+		<Control ClassName="bootcreatedvd" ControlType ="1" >
+			<Text>
+				<![CDATA[å»ºç«‹CD/DVDé–‹æ©Ÿå…‰ç¢Ÿ]]>
+			</Text>
+		</Control>
+		<Control ClassName="bootnotsupport" ControlType ="1" >
+			<Text>
+				<![CDATA[ç›®å‰ä¸æ”¯æ´ç§»å‹•ç¡¬ç¢Ÿï¼Œè«‹æ’å…¥USB]]>
+			</Text>
+		</Control>
+		<Control ClassName="bootcheck" ControlType ="1" >
+			<Text>
+				<![CDATA[æ­£åœ¨æª¢é©—â€¦]]>
+			</Text>
+		</Control>
+		<Control ClassName="bootformatdisk" ControlType ="11" >
+			<Text>
+				<![CDATA[æ‚¨ç¢ºå®šè¦æ ¼å¼åŒ–æ­¤ç£ç¢Ÿå—Žå—Žï¼Ÿ<br><br><br>æ­¤æ“ä½œå°‡æ ¼å¼åŒ–æ‚¨çš„USBè¨˜æ†¶é«”ï¼Œæˆ‘å€‘å»ºè­°æ‚¨å‚™ä»½æ‚¨çš„é‡è¦è³‡æ–™ï¼Œé‡æ–°é‹è¡Œæ­¤æ“ä½œã€‚]]>
+			</Text>
+		</Control>
+		<Control ClassName="bootwriteprotected" ControlType ="11" >
+			<Text>
+				<![CDATA[æ ¼å¼åŒ–å¤±æ•—ï¼Œä½ çš„ç£ç¢Ÿé˜²å¯«.]]>
+			</Text>
+		</Control>
+		<Control ClassName="bootusbused" ControlType ="11" >
+			<Text>
+				<![CDATA[æ ¼å¼åŒ–å¤±æ•—ï¼Œç£ç¢Ÿè¢«ä½”ç”¨]]>
+			</Text>
+		</Control>
+		<Control ClassName="bootunknowreason" ControlType ="11" >
+			<Text>
+				<![CDATA[æœªçŸ¥åŽŸå› æ ¼å¼åŒ–å¤±æ•—ï¼Œè«‹æ›´æ›å…¶ä»–USBè¨­å‚™]]>
+			</Text>
+		</Control>
+		<Control ClassName="bootformatdevicerm" ControlType ="11" >
+			<Text>
+				<![CDATA[æ ¼å¼åŒ–è¨­å‚™å·²ç¶“è¢«ç§»é™¤]]>
+			</Text>
+		</Control>
+		<Control ClassName="bootretry" ControlType ="13" >
+			<Text>
+				<![CDATA[é‡è©¦]]>
+			</Text>
+		</Control>
+		<Control ClassName="bootdevicerm" ControlType ="11" >
+			<Text>
+				<![CDATA[è¨­å‚™å·²ç¶“è¢«ç§»é™¤]]>
+			</Text>
+		</Control>
+		<Control ClassName="bootDvdnotready" ControlType ="11" >
+			<Text>
+				<![CDATA[DVD / CDé©…å‹•å™¨æœªæº–å‚™å¥½ï¼Œè«‹æª¢æŸ¥æ˜¯å¦æ’å…¥]]>
+			</Text>
+		</Control>
+		<Control ClassName="bootinsertblankdvd" ControlType ="11" >
+			<Text>
+				<![CDATA[è«‹æ’å…¥ä¸€å¼µç©ºç™½çš„DVD / CDæˆ–å¯è®€å¯«DVD / CD]]>
+			</Text>
+		</Control>
+		<Control ClassName="bootloading" ControlType ="1" >
+			<Text>
+				<![CDATA[æ­£åœ¨ä¸‹è¼‰ ]]>
+			</Text>
+		</Control>
+		<Control ClassName="bootloadfailed" ControlType ="11" >
+			<Text>
+				<![CDATA[ä¸‹è¼‰å¤±æ•—! ]]>
+			</Text>
+		</Control>
+		<Control ClassName="bootcheckconnect" ControlType ="11" >
+			<Text>
+				<![CDATA[è«‹æª¢æŸ¥ç¶²è·¯æ˜¯å¦æ­£å¸¸.]]>
+			</Text>
+		</Control>
+		<Control ClassName="booterasedvd" ControlType ="11" >
+			<Text>
+				<![CDATA[è©²æ“ä½œæœƒæ¶ˆé™¤æ‚¨çš„DVD / CDï¼Œæ‚¨ç¢ºå®šè¦ç¾åœ¨æ¶ˆé™¤å—Žï¼Ÿ]]>
+			</Text>
+		</Control>
+		<Control ClassName="bootformat" ControlType ="1" >
+			<Text>
+				<![CDATA[æ­£åœ¨æ ¼å¼åŒ– ]]>
+			</Text>
+		</Control>
+		<Control ClassName="bootcreatecomplete" ControlType ="1" >
+			<Text>
+				<![CDATA[å»ºç«‹å®Œæˆ]]>
+			</Text>
+		</Control>
+		<Control ClassName="bootcreatefailed" ControlType ="1" >
+			<Text>
+				<![CDATA[å»ºç«‹å¤±æ•—]]>
+			</Text>
+		</Control>
+
+		<Control ClassName="bootwritecomplete" ControlType ="1" >
+			<Text>
+				<![CDATA[ç‡’éŒ„å®Œæˆ]]>
+			</Text>
+		</Control>
+		<Control ClassName="bootwritefailed" ControlType ="11" >
+			<Text>
+				<![CDATA[ç‡’éŒ„å¤±æ•—]]>
+			</Text>
+		</Control>
+		<Control ClassName="bootnext" ControlType ="1" >
+			<Text>
+				<![CDATA[ä¸‹ä¸€æ­¥]]>
+			</Text>
+		</Control>
+		<Control ClassName="bootchangebios" ControlType ="1" >
+			<Text>
+				<![CDATA[2ï¼šæ›´æ”¹BIOSå¼•å°Žé †åºï¼Œä»¥ä¾¿é¦–å…ˆåˆ—å‡ºUSBè¨­å‚™é¸é …]]>
+			</Text>
+		</Control>
+		<Control ClassName="bootattach" ControlType ="1" >
+			<Text>
+				<![CDATA[1ï¼šå°‡USBè¨­å‚™é€£æŽ¥åˆ°é›»è…¦]]>
+			</Text>
+		</Control>
+		<Control ClassName="bootrestart" ControlType ="1" >
+			<Text>
+				<![CDATA[3ï¼šé‡å•Ÿé›»è…¦]]>
+			</Text>
+		</Control>
+		<Control ClassName="bootviewguide" ControlType ="1" >
+			<Text>
+				<![CDATA[<b><a href="#"><font color=#00B0F5>æŸ¥çœ‹æŒ‡å¼•</font></a></b>]]>
+			</Text>
+		</Control>
+		<Control ClassName="bootcontact" ControlType ="13" >
+			<Text>
+				<![CDATA[è¯ç¹«æˆ‘å€‘]]>
+			</Text>
+		</Control>
+		<Control ClassName="bootcreating" ControlType ="1" >
+			<Text>
+				<![CDATA[æ–°å»ºä¸­...]]>
+			</Text>
+		</Control>
+		<Control ClassName="bootwriting" ControlType ="1" >
+			<Text>
+				<![CDATA[Overwriting]]>
+			</Text>
+		</Control>
+		<Control ClassName="bootstoploading" ControlType ="11" >
+			<Text>
+				<![CDATA[æ­£åœ¨åŸ·è¡Œä¸‹è¼‰ï¼Œæ˜¯å¦è¦åœæ­¢ï¼Ÿ]]>
+			</Text>
+		</Control>
+		<Control ClassName="bootsBurncomplete" ControlType ="1" >
+			<Text>
+				<![CDATA[å¯å•Ÿå‹•çš„CD / DVDç‡’éŒ„å®Œæˆï¼]]>
+			</Text>
+		</Control>
+		<Control ClassName="bootburnfailed" ControlType ="1" >
+			<Text>
+				<![CDATA[ç‡’éŒ„å¤±æ•—]]>
+			</Text>
+		</Control>
+		<Control ClassName="bootinsertdvd" ControlType ="1" >
+			<Text>
+				<![CDATA[è«‹æ’å…¥DVDæˆ–è€…CD]]>
+			</Text>
+		</Control>
+		<Control ClassName="bootInvalid" ControlType ="11" >
+			<Text>
+				<![CDATA[ç„¡æ•ˆçš„è¨­å‚™]]>
+			</Text>
+		</Control>
+		<Control ClassName="bootcannotavaliable" ControlType ="11" >
+			<Text>
+				<![CDATA[ç„¡æ³•æ‰¾åˆ°å¯ç”¨çš„DVD / CDè¨­å‚™ï¼Œä½ æƒ³ç¹¼çºŒå—Žï¼Ÿ]]>
+			</Text>
+		</Control>
+		<Control ClassName="bootformatnow" ControlType ="13" >
+			<Text>
+				<![CDATA[æ ¼å¼åŒ–]]>
+			</Text>
+		</Control>
+		<Control ClassName="bootfailedgetdvd" ControlType ="11" >
+			<Text>
+				<![CDATA[ç²å–DVDè³‡è¨Šå¤±æ•—]]>
+			</Text>
+		</Control>
+		<Control ClassName="bootDvdnotenough" ControlType ="11" >
+			<Text>
+				<![CDATA[DVD / CDç©ºé–“ä¸å¤ ï¼Œè«‹æ’å…¥è¶…éŽ250 MBçš„DVD / CD]]>
+			</Text>
+		</Control>
+		<Control ClassName="bootcantgetspace" ControlType ="11" >
+			<Text>
+				<![CDATA[ç„¡æ³•ç²å–DVD / CDçš„ç©ºé–“å¤§å°ï¼Œè«‹ç¢ºä¿DVD / CDç©ºé–“å¤§å°å¤§æ–¼250 MB]]>
+			</Text>
+		</Control>
+		<Control ClassName="bootBurning" ControlType ="1" >
+			<Text>
+				<![CDATA[ç‡’éŒ„]]>
+			</Text>
+		</Control>
+		<Control ClassName="bootdvdchangebios" ControlType ="1" >
+			<Text>
+				<![CDATA[1ï¼šæ›´æ”¹BIOSå¼•å°Žé †åºï¼Œä»¥ä¾¿é¦–å…ˆåˆ—å‡ºCDè¨­å‚™é¸é …]]>
+			</Text>
+		</Control>
+		<Control ClassName="bootdvdtattach" ControlType ="1" >
+			<Text>
+				<![CDATA[2ï¼šæ’å…¥DVD/CDåˆ°é›»è…¦]]>
+			</Text>
+		</Control>
+		<Control ClassName="bootdvdrestart" ControlType ="1" >
+			<Text>
+				<![CDATA[3ï¼šé‡å•Ÿé›»è…¦]]>
+			</Text>
+		</Control>
+		<Control ClassName="bootlblsuccess" ControlType="11">
+			<Text>
+				<![CDATA[Bootable Toolkit å·²è¨»å†Šï¼]]>
+			</Text>
+		</Control>
+		<Control ClassName="bootBootableDrive" ControlType="1">
+			<Text>
+				<![CDATA[å¯é–‹æ©Ÿç£ç¢Ÿæ©Ÿï¼š]]>
+			</Text>
+		</Control>
+		<Control ClassName="bootersewarning" ControlType="1">
+			<Text>
+				<![CDATA[è­¦å‘Šï¼šåœ¨å»ºç«‹å¯å•Ÿå‹•åª’é«”é©…å‹•å™¨ä¹‹å‰ï¼Œå°‡åˆªé™¤æ‰€é¸ç£ç›¤ä¸­çš„æ‰€æœ‰æ•¸æ“šã€‚]]>
+			</Text>
+		</Control>
+		<Control ClassName="bootselectusb" ControlType="1">
+			<Text>
+				<![CDATA[é¸æ“‡USB]]>
+			</Text>
+		</Control>
+		<Control ClassName="bootDownloadware" ControlType="1">
+			<Text>
+				<![CDATA[ä¸‹è¼‰WinPEå•“å‹•å™¨]]>
+			</Text>
+		</Control>
+		<Control ClassName="bootFormatusbflashdrive" ControlType="1">
+			<Text>
+				<![CDATA[æ ¼å¼åŒ–USB]]>
+			</Text>
+		</Control>
+		<Control ClassName="bootnewCompleted" ControlType="1">
+			<Text>
+				<![CDATA[è¨­ç½®é›»è…¦å•Ÿå‹•]]>
+			</Text>
+		</Control>
+		<Control ClassName="bootloadwaiting" ControlType="1">
+			<Text>
+				<![CDATA[æ­£åœ¨ä¸‹è¼‰WinPEå•“å‹•å™¨ï¼Œè«‹ç¨å€™...]]>
+			</Text>
+		</Control>
+		<Control ClassName="bootFormatingflashdrive" ControlType="1">
+			<Text>
+				<![CDATA[æ ¼å¼åŒ–USB]]>
+			</Text>
+		</Control>
+		<Control ClassName="bootFormatingDvddrive" ControlType="1">
+			<Text>
+				<![CDATA[æ­£åœ¨æ ¼å¼åŒ–CD / DVD â€¦]]>
+			</Text>
+		</Control>
+		<Control ClassName="bootcreatingboot" ControlType="1">
+			<Text>
+				<![CDATA[æ­£åœ¨å»ºç«‹å¯å¼•å°ŽUSBé©…å‹•å™¨ï¼Œè«‹è€å¿ƒç­‰å¾…â€¦]]>
+			</Text>
+		</Control>
+		<Control ClassName="bootBurningboot" ControlType="1">
+			<Text>
+				<![CDATA[å»ºç«‹å¯é–‹æ©Ÿç£ç¢Ÿæ©Ÿï¼Œè«‹ä¸è¦å½ˆå‡ºCD / DVD â€¦]]>
+			</Text>
+		</Control>
+		<Control ClassName="bootdrivecompleted" ControlType="1">
+			<Text>
+				<![CDATA[å¯å•Ÿå‹•çš„USBå®Œæˆï¼]]>
+			</Text>
+		</Control>
+		<Control ClassName="bootselectDvd" ControlType="1">
+			<Text>
+				<![CDATA[é¸æ“‡DVD / CD]]>
+			</Text>
+		</Control>
+		<Control ClassName="bootFormatdvdflashdrive" ControlType="1">
+			<Text>
+				<![CDATA[æ ¼å¼CD / DVD]]>
+			</Text>
+		</Control>
+	</Dialog>
+</Language>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              ‹ávI’’’E"Ù} qÝ ôB‘È³fÍ^³fwÍ^þ¹s²ûìá
+‘ÇËbzÐ(‹¹]ò!”Åì>Ðê~ª@ã±D=zô´iÓ"##333>ÌöZ kñXY¬èQ„àZ x4ô9ÚÀÀ`Ô¨Q3fÌxþùç·mÛvèÐ!\!òYLïaååå©©©¡¡²ÅÐ¡CÑ£ €G£££cdd4fÌ˜™3g­^½Zq…¦ßøg1WSo¥,vwwG ÛkÁÝùtÚªU«222p…ÿ,f»ä““SBCÃÜÝ=Å ðDX×‚]!òÂ/ìØ±Cq…È€=³Ç{¾X’˜øë|1² ž»BdÜ¸q³gÏY·N6ýVXXXUÅ¦ßî´>ò#]ÍÎÝa¾ T†u-Óo©©©<{¶r íGæ7_\WRR’””$‰0_ ªÇM¿™Œ3Ö××wùòåbqbnn®¼Ff³Z>ýÆ3‹‹ŠŠØ=–\]]Ñ£ €¾ 3xðƒ#F°ýÈT R"WVVq5òíÞÆÉ§GQ[[KYçïïïää„ûz @âîE-Ûìíí½lÙòÄDJäƒlùîÝ»¿ü¢]~s²ëîbcãýý±3 úÛÆimmãéI5ò²ää”üüCçÎ—J¥Z9ýÆ3‹ËÊÊèÍ)((Y Âájd}ª‘}||V¬X¹u«ì
+‘óçe»ß´,‘ùõ(ê$’RÊb‘HÄî=Š, ápÓo#GŽdWˆ¤§§¦D¦Ykf-xÏ—&$ˆCBºººâh PªŒŒF²6mzdäjª‘óòò«ªª´`'9Šû‹1_ jÃ6ÖsWQO}î¹bqbNNÎÙ³gY"÷ß+DøÌ´ÕÔÔ—pû‹1_ €2ÈÈÈxÄˆ‘^^^‹âã²³³å‰|§?nãä“Åuuu……E±±ql¾u1 hª‘­¬¬&MšŸ››K‰¬t…H¿©‘yô‹\ëAÿ™þþþŽŽŽ˜/ ¢£££§§G‰<qâÄ%K–%&&åçËúÈýëÌ^¯YL_³Ý@b±8 €ÍcŽ 4%²——×Ê•²é7*!/]ºÔÜÜ?¶qòÉâ¦¦¦ŠŠ#©©[CBBœœœ1Ó šK__äÈQ¾¾S×­[¿gÏŠ‹K.]º¬ù‰Ìg¦­±±‘²8###<<ÂÃÃÃÌl(² 4»foìØqÏ<óÌ‹/¾œ••UR"ÛL‰¬±]žY\^^‘––±hâÄ‰C†èªûÁ è›~³³³›={ö‹/¾´}ûŽâââóçe÷¢noo¿_³f-øÌQ44È®NMM?~¼¥¥¥®®.½ñ¨û‘ è|?²ý¬Y³×­[Oð¹;ŸViÚ¬¿™¶Z*ð“““CCC=<<¨.F@¢ØX?}úô•+W¦¤¤<˜W]Íf-Ú¶S°Pîô—>¬GAu1eq|||HHˆ›››¹¹9e±ºZ €GÄº£Fš2eÊòåËSS·r›†ÎÉ·qþ¢œ}B&r× ~Èž¶ºÒÒR±XLYŒk  £Dfë}}}W®ŒLOÏ Dæ¶qÊî³wÿþ}áùaEq§·§MÂÝc)» @°;ŸR<}úôÈÈ•™™™8uêÔ7nß¾ÍY˜ÆE
+Å@_´·ß½vízAÁá¸¸x¶3÷X -!ßý6jÆŒ™K—.ŽŽùä“O¿þúÄ?Ü¸u«õçŸV€ë‹PæÄìW~úéÖ™3•ŸþùÆ›,ðwtt27·@] ÚCžÈ#'OžºqãÆ¿þõoG»råJKKË½{ZÉ*ånƒ¸k§˜5‹é'9yòä|ðòË¯Ìûô¸qv&&&Èb Ð6”kVVÃ=<<ü_ý={ö”””œ?¡±±¡­­­k"wež¹ÜõßêÄþ–û÷¡ŸáØ±c»wïY½zÍ”)¾TËáº; ÐN”nzzúŽŽŽsæÌyé¥—233srPMzãF‡ÆE¯¡Üm.wûmÊŽÒŸükËâÖ­[ô–PPP˜––¶dÉROO/kkk}}}d1 h3]]]S;;»3fp­äè?þû±cÇ¿ÿþ{©´‘ÊdÅù½N¡ü°\æ“ÂÊ‚üeEqSSÓÉ“§>øàƒÞ
+		qww·´¦§§‡= `@à–Ö1bÒ¤I‚o¾¹!+++77÷Ä‰W¯^•J¥]ÇàºâÄŠ,îô[¿üòKssKuõ¹ÂÂ¢mÛ¶­ZµfêÔiãÆ3332d² y+ÙÊÙÙeÎœ9K–,Ù´iÓîÝ»óóó¿ùæ›ë×¯SÝzçÎNeö…rÂ*r¶Û8î2M!«ˆ)ˆÏŸ¿P\\²gÏ¸¢xáäÉžÖÖÖôóÐO…,€‡k%ë™ššŽ9ÂÃÃã™gžY±â¹Í›7ïÝ»·°°ðäÉ“W®\illlmmeÅr·»‡x¶,(ÖÛÛÛ©î®®®.**Þ³ç7F‰D¡S¦øRQlnnŽ h”€TêëËÎïÙÚÚNœ8iÁ‚/½ôR\\Üþð‡œœœcÇŽ:uŠåò­[·¨^¾wïe«âŒŸ¢RîÚ£øùçŸïÞ½ÛÖÖF)|áÂús:´{÷ž·Þz+"bÑÌ™³ìììéï¥¢˜ÞÅ  ¿†²¹¹…ƒƒƒ¯¯¯ŸŸßŠ+6mÚ”œœüÇ?þ177÷øñã§OŸ¾xñâ?þXWWGéÜÐÐÐÜÜL}ûömÊ\ú'}M¿ÒÔÔD¿U__íÚµ3gÎ|óÍ7ï¿ÿÁÖ­[ßxã‘H4eÊÇaÃ†¢S Ðº066>|ø¸qã&MšôÔSO¿ðÂQQQ)))|ðÁgŸ}–ŸŸ/‘HÊËË¿úê«ýë_'Ožü–C_œ8q‚RûèÑ£ôTïÛ·/++‹ý7ÞŒˆˆ ˆ÷ññ¡?ÙÂÂmb €^PJRÅJu«¥¥¥“““··÷¼yó###ß|óÍ7R:ÇÆÆŠÅb*x·mÛF™»cÇú"--Â7>>ž¾¾mýúõ.|æ™g¼½}GÅZb  ^t8šzzúFFF”Ë#FŒ°··Ÿ0aÂÔ©SgÎœ9{öì§Ÿ~Úßß?,,lÑ¢EK8ô•ÒTÓoÍ™3gÚ´iôýcÇŽ¥L777§|×ÓÓC <ŠÎAƒQ±LIJyjffFå-¥³µµõÈ‘#ÇGµ³‹œ³³3ýŠ­­-å¯••}§©©)ÕÂô¯³3ub €'ÅÂt%¬®®.´1ÇÄÄ„þIu4+é·¨
+fß‰ è[:§î                                                                                                                                          @‹ý
+N3já­©½    IEND®B`‚
