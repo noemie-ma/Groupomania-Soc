@@ -119,6 +119,8 @@ Ecrivez un message ici</textarea
 import axios from "axios";
 import router from "../router";
 // import "../main.css";
+
+axios.defaults.headers.common["Authorization"] = `token ${user.token}`;
 export default {
   name: "JourNal",
   data() {
