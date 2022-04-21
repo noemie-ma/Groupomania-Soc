@@ -8,10 +8,27 @@ const Message = db.Message;
 
 // Pour faire apparaître les messages
 exports.findAllMessages = (req, res, next) => {
-  Message.findAll((err, docs) => {
-    if (!err) res.send(docs);
-    else console.log("Error to get data : " + err);
-  }).sort({ createdAt: -1 });
+  Message.findAll({
+    include: { model: User, required: true, attributes: ["prenom", "nom"] },
+
+    order: [["id", "DESC"]],
+  })
+    .then((messages) => {
+      const list = messages.map((message) => {
+        return Object.assign(
+          {},
+          {
+            id: message.id,
+            createdAt: message.createdAt,
+            message: message.message,
+            messageUrl: message.image,
+            UserId: message.userId,
+          }
+        );
+      });
+      res.status(200).json({ list });
+    })
+    .catch((error) => res.status(400).json({ message: error.message }));
 };
 
 // Pour créer un poste sur le RS

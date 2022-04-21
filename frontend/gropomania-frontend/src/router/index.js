@@ -1,14 +1,15 @@
 import { createRouter, createWebHistory } from "vue-router";
 import Login from "@/views/logIn.vue";
-import Feed from "@/components/MyFeed.vue";
+import Myfeed from "@/components/MyFeed.vue";
 import SignUp from "@/views/signUp";
 import Profile from "@/views/userProfile.vue";
 import Journal from "@/views/JourNal.vue";
+import Feed from "@/views/Feed.vue";
 const routes = [
   {
-    path: "/feed",
+    path: "/Myfeed",
     name: "MyFeed",
-    component: Feed,
+    component: Myfeed,
   },
   {
     path: "/signup",
@@ -29,6 +30,11 @@ const routes = [
     path: "/Journal",
     name: "Journal",
     component: Journal,
+  },
+  {
+    path: "/Feed",
+    name: "Feed",
+    component: Feed,
   },
 ];
 

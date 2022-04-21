@@ -16,22 +16,22 @@ module.exports = {
           key: "id",
         },
       },
-      title: {
+      /*title: {
         allowNull: false,
         type: Sequelize.STRING,
-      },
-      content: {
+      },*/
+      message: {
         allowNull: true,
         type: Sequelize.STRING,
       },
-      attachment: {
+      image: {
         allowNull: true,
         type: Sequelize.STRING,
       },
-      likes: {
+      /*likes: {
         allowNull: true,
         type: Sequelize.INTEGER,
-      },
+      },*/
       created_at: {
         type: "TIMESTAMP",
         defaultValue: Sequelize.literal("CURRENT_TIMESTAMP"),

@@ -1,6 +1,6 @@
 <template>
   <div class="profile">
-    <h1 class="title">Bienvenue sur votre {{ prenom }} {{ nom }} !</h1>
+    <h1 class="title">Bienvenue sur votre profil {{ prenom }} {{ nom }} !</h1>
     <p>
       Si vous souhaitez changer des détails sur votre profil, c'est ci-dessous.
     </p>
