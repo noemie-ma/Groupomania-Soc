@@ -12,7 +12,7 @@ const routes = [
     component: Myfeed,
   },
   {
-    path: "/signup",
+    path: "/",
     name: "signUp",
     component: SignUp,
   },
