@@ -33,6 +33,12 @@
     <div class="button">
       <button @click="getSignedIn()">S'inscrire</button>
     </div>
+    <div class="explanation">
+      <p>
+        Vous avez un compte ? Vous pouvez vous connecter
+        <a href="/signUp">ici </a> !
+      </p>
+    </div>
   </div>
 </template>
 
