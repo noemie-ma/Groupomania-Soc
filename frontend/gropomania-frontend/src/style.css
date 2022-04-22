@@ -105,11 +105,11 @@ body
     margin-top: 20px;
     text-align: center;
 }
-.explanation-login p
-{
-    text-align: center;
-}
 
+.explanation a
+{
+    color :#FFFFFF;
+}
 .form2
 {
 	display: flex;
