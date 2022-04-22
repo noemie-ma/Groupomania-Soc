@@ -19,10 +19,10 @@ exports.findAllMessages = (req, res, next) => {
           {},
           {
             id: message.id,
+            UserId: message.userId,
             createdAt: message.createdAt,
             message: message.message,
             messageUrl: message.image,
-            UserId: message.userId,
           }
         );
       });
@@ -36,19 +36,16 @@ exports.createMessage = (req, res, next) => {
   const token = req.headers.authorization.split(" ")[1];
   const decodedToken = jwt.verify(token, "RANDOM_TOKEN_SECRET");
   const userId = decodedToken.userId;
-  let imagePost = "";
+  let image = "";
   if (req.file) {
-    imagePost = `${req.protocol}://${req.get("host")}/images/${
-      req.file.filename
-    }`;
+    image = `${req.protocol}://${req.get("host")}/images/${req.file.filename}`;
   }
 
-  console.log("teuser idst" + userId);
+  console.log("Publié par" + userId);
   const message = new Message({
     userId: userId,
-    // idUSERS: userId,
     message: req.body.message,
-    messageUrl: imagePost,
+    messageUrl: image,
   });
   console.log("test" + message);
   message
