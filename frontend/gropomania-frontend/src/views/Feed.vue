@@ -24,11 +24,20 @@
               Si vous souhaitez publier un message, c'est par
               <a href="/JourNal">ici</a>!
             </p>
-            <div v-bind="message in messages" :key="index" class="message">
+            <div class="cards">
+              <div class="message-header">
+                <div class="message-header-left">
+                  <img src="" alt="" />
+                </div>
+                <div class="message-header-right">
+                  <p>{{ messages.UserId }}</p>
+                  <p>{{ messages.CreatedAt }}</p>
+                </div>
+              </div>
+              <div class="message-content">
+                <p>{{ messages.message }}</p>
+              </div>
               {{ messages }}
-              <span class="lighten">
-                <span v-text="message"></span>
-              </span>
             </div>
           </div>
         </div>
@@ -49,7 +58,11 @@ export default {
   name: "JourNal",
   data() {
     return {
-      messages: "",
+      messages: [],
+      UserId: "userId",
+      createdAt: "createdAt",
+      message: "message",
+      image: "null",
     };
   },
   async created() {

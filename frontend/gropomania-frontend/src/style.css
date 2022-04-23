@@ -197,6 +197,19 @@ li button
     order: 2;
 }
 
+#feed {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+  }
+  .message {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+  }
+
 /* USER PROFILE */
 
 .profile

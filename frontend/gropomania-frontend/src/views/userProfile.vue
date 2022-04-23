@@ -18,23 +18,17 @@
           </nav>
         </div>
         <div class="profile">
-          <div v-bind="(user, index) in users" class="user">
-            {{ user }}
-            <h1 class="title">
-              Bienvenue sur votre profil {{ prenom }} {{ nom }} !
-            </h1>
-            <p>
-              Si vous souhaitez changer des détails sur votre profil, c'est
-              ci-dessous.
-            </p>
-            <p>{{ email }} {{ bio }} {{ createdAt }}</p>
-            <div class="options">
-              <button @click="update()">Modifier mon compte</button>
-              <button @click="deleteLocalStorage()">
-                Supprimer mon compte
-              </button>
-              <button @click="logout()" class="button">Déconnexion</button>
-            </div>
+          <h1 class="title">
+            Bienvenue sur votre profil {{ prenom }} {{ nom }} !
+          </h1>
+          <p>
+            Si vous souhaitez changer des détails sur votre profil, c'est
+            ci-dessous.
+          </p>
+          <p>{{ email }} {{ bio }} {{ createdAt }}</p>
+          <div class="options">
+            <button @click="update()">Modifier mon compte</button>
+            <button @click="deleteLocalStorage()">Supprimer mon compte</button>
           </div>
         </div>
       </div>
@@ -50,17 +44,17 @@ export default {
   name: "userProfile",
   data() {
     return {
-      nom: null,
-      prenom: null,
-      email: null,
-      bio: null,
+      nom: "",
+      prenom: "",
+      email: "",
+      bio: "",
       createdAt: "",
     };
   },
-  async created() {
+  created() {
     let id = localStorage.getItem("id");
-    this.user = await axios
-      .get("http://localhost:3000/api/users" + id, {
+    axios
+      .get("http://localhost:3000/api/users/" + id, {
         headers: {
           "Content-Type": "application/json",
           "Access-Control-Allow-Origin": "http://localhost:8080",
@@ -91,7 +85,7 @@ export default {
       );
       if (confirmUserDeletion == true) {
         axios
-          .delete("http://localhost:3000/api/users/del" + id, {
+          .delete("http://localhost:3000/api/users/del/" + id, {
             headers: {
               Authorization: "Bearer " + localStorage.getItem("token"),
             },
