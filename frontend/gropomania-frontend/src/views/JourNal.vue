@@ -33,7 +33,7 @@ Ecrivez un message ici</textarea
               <input type="hidden" v-model="image" name="MAX_FILE_SIZE" />
 
               <input type="file" /><br />
-              <router-link to="/JourNal">
+              <router-link to="/Feed">
                 <button
                   type="submit"
                   v-on:click="createMessage()"
@@ -43,16 +43,6 @@ Ecrivez un message ici</textarea
                 </button>
               </router-link>
             </form>
-          </div>
-          <!-- Fil d'actu-->
-          <div id="feed">
-            <h1>Fil d'actualités</h1>
-            <div v-bind="message in messages" class="message">
-              {{ getMessages }}:
-              <span class="lighten">
-                <span v-html="id"></span>{{ userId }}
-              </span>
-            </div>
           </div>
         </div>
       </article>
@@ -81,16 +71,6 @@ export default {
     };
   },
   methods: {
-    getMessages: function () {
-      axios
-        .get("http://localhost:3000/api/messages/all", {
-          headers: {
-            "Content-Type": "application/json",
-            "Access-Control-Allow-Origin": "http://localhost:8080",
-          },
-        })
-        .then((response) => (this.message = response.data));
-    },
     createMessage: function () {
       axios
         .post("http://localhost:3000/api/messages/create", {
@@ -105,7 +85,7 @@ export default {
           console.log(response.data);
 
           if (response.status == 201) {
-            window.location.href = "/JourNal";
+            window.location.href = "/Feed";
             alert("La publication est réussie !");
           } else {
             alert(

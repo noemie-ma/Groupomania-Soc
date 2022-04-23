@@ -4,6 +4,7 @@ import Myfeed from "@/components/MyFeed.vue";
 import SignUp from "@/views/signUp";
 import Profile from "@/views/userProfile.vue";
 import Journal from "@/views/JourNal.vue";
+import Feed from "@/views/Feed.vue";
 const routes = [
   {
     path: "/Myfeed",
@@ -29,6 +30,11 @@ const routes = [
     path: "/Journal",
     name: "Journal",
     component: Journal,
+  },
+  {
+    path: "/Feed",
+    name: "Feed",
+    component: Feed,
   },
 ];
 
