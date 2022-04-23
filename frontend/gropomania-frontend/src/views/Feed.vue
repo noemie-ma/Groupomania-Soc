@@ -24,14 +24,8 @@
               Si vous souhaitez publier un message, c'est par
               <a href="/JourNal">ici</a>!
             </p>
-            <div
-              v-bind="(message, index) in messages"
-              :key="messages.id"
-              class="message"
-            >
-              <p v-if="isAdmin || messages.userId == id" class="usermessage">
-                {{ messages }}
-              </p>
+            <div v-bind="message in messages" :key="index" class="message">
+              {{ messages }}
               <span class="lighten">
                 <span v-text="message"></span>
               </span>
@@ -55,7 +49,7 @@ export default {
   name: "JourNal",
   data() {
     return {
-      messages: null,
+      messages: "",
     };
   },
   async created() {
@@ -67,7 +61,10 @@ export default {
         },
       })
       .then((response) => (this.messages = response.data.list))
-      .catch((error) => console.log(error));
+      .catch((error) => {
+        console.log(error);
+        this.errored = true;
+      });
   },
   methods: {
     localClear() {
