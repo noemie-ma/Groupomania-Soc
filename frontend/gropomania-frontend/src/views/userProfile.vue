@@ -122,6 +122,10 @@ export default {
       localStorage.clear();
       router.push({ path: "/" });
     },
+    localClear() {
+      localStorage.clear();
+      router.push({ path: "/" });
+    },
   },
 };
 </script>
