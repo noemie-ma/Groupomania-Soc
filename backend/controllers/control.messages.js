@@ -22,7 +22,7 @@ exports.findAllMessages = (req, res, next) => {
             UserId: message.userId,
             createdAt: message.createdAt,
             message: message.message,
-            messageUrl: message.image,
+            image: message.image,
           }
         );
       });
@@ -45,7 +45,7 @@ exports.createMessage = (req, res, next) => {
   const message = new Message({
     userId: userId,
     message: req.body.message,
-    messageUrl: image,
+    image: image,
   });
   console.log("test" + message);
   message

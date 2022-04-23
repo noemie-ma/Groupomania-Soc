@@ -18,21 +18,7 @@
               </li>
             </nav>
           </div>
-          <div class="card-body">
-            <!-- L'auteur est-il admin ? -->
-            <div id="compteButton" class="text-center">
-              <router-link v-if="isAdmin" to="/Administration"
-                ><button type="button" class="admin-button">
-                  Administration
-                  <button class="delete">
-                    <img
-                      src="../assets/poubelle.svg"
-                      alt="suppression de message"
-                    />
-                  </button></button
-              ></router-link>
-            </div>
-          </div>
+          <!-- Zone de publication de messages-->
           <div id="post">
             <form method="post" action="publish">
               <textarea
@@ -44,19 +30,29 @@
               >
 Ecrivez un message ici</textarea
               ><br />
-              <input type="hidden" name="MAX_FILE_SIZE" value="4194304" />
+              <input type="hidden" v-model="image" name="MAX_FILE_SIZE" />
 
               <input type="file" /><br />
-              <router-link to="/Feed">
+              <router-link to="/JourNal">
                 <button
                   type="submit"
-                  @onclick="createMessage()"
+                  v-on:click="createMessage()"
                   class="btn btn-primary"
                 >
                   Publier
                 </button>
               </router-link>
             </form>
+          </div>
+          <!-- Fil d'actu-->
+          <div id="feed">
+            <h1>Fil d'actualités</h1>
+            <div v-bind="message in messages" class="message">
+              {{ getMessages }}:
+              <span class="lighten">
+                <span v-html="id"></span>{{ userId }}
+              </span>
+            </div>
           </div>
         </div>
       </article>
@@ -78,30 +74,47 @@ export default {
     return {
       messages: [],
       id: "",
-      name: "",
-      creation: "",
+      nom: "",
+      prenom: "",
+      message: "",
       image: "",
     };
   },
   methods: {
+    getMessages: function () {
+      axios
+        .get("http://localhost:3000/api/messages/all", {
+          headers: {
+            "Content-Type": "application/json",
+            "Access-Control-Allow-Origin": "http://localhost:8080",
+          },
+        })
+        .then((response) => (this.message = response.data));
+    },
     createMessage: function () {
       axios
         .post("http://localhost:3000/api/messages/create", {
           message: this.message,
-          userId: this.userId,
-          createdAt: this.createdAt,
-          messageUrl: this.image,
+          image: this.image,
+          headers: {
+            "Content-Type": "application/json",
+            "Access-Control-Allow-Origin": "http://localhost:8080",
+          },
         })
-        .then(() => {
-          const formData = new FormData();
-          formData.append("image", this.file);
-          formData.append("UserId", localStorage.getItem("userId"));
-          formData.append("message", this.message);
-          alert("publication réussie!");
-          router.push({ path: "JourNal" });
+        .then((response) => {
+          console.log(response.data);
+
+          if (response.status == 201) {
+            window.location.href = "/JourNal";
+            alert("La publication est réussie !");
+          } else {
+            alert(
+              "Une erreur est survenue lors de la publication, contactez l'administrateur"
+            );
+          }
         })
         .catch((error) => {
-          console.log(error);
+          alert(error.message);
         });
     },
     commentPage(m) {
@@ -117,6 +130,9 @@ export default {
       if (confirmMessageDeletion == true) {
         axios
           .delete("http://localhost:3000/api/messages/", {
+            headers: {
+              Authorization: "Bearer " + localStorage.getItem("token"),
+            },
             params: {
               messageId: a,
               messageUid: b,

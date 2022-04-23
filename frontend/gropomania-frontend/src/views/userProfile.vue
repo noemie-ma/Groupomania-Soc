@@ -4,7 +4,6 @@
     <p>
       Si vous souhaitez changer des détails sur votre profil, c'est ci-dessous.
     </p>
-    <img :src="user.photo" />
     <p>{{ email }} {{ bio }} {{ createdAt }}</p>
     <div class="options">
       <button @click="update()">Modifier mon compte</button>
@@ -29,30 +28,16 @@ export default {
       createdAt: "",
     };
   },
-  createdAccount() {
+  getUsers: function () {
     let id = localStorage.getItem("id");
-    // let thing  = this;
     axios
-      .get("http://localhost:3000/api/users/" + id, {
-        headers: { Authorization: "Bearer " + localStorage.getItem("token") },
+      .get("http://localhost:3000/api/users" + id, {
+        headers: {
+          "Content-Type": "application/json",
+          "Access-Control-Allow-Origin": "http://localhost:8080",
+        },
       })
-      .then((res) => {
-        //thing.id = res.data.id;
-        this.nom = res.data.nom.charAt(0).toUpperCase() + res.data.nom.slice(1);
-        this.prenom =
-          res.data.prenom.charAt(0).toUpperCase() + res.data.prenom.slice(1);
-        this.email =
-          res.data.email.charAt(0).toUpperCase() + res.data.email.slice(1);
-        this.isAdmin = res.data.isAdmin;
-        this.createdAt = res.data.createdAt
-          .slice(0, 10)
-          .split("-")
-          .reverse()
-          .join(".");
-      })
-      .catch((error) => {
-        console.log(error);
-      });
+      .then((response) => (this.message = response.data));
   },
   methods: {
     update() {

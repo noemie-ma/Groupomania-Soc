@@ -36,7 +36,7 @@
     <div class="explanation">
       <p>
         Vous avez un compte ? Vous pouvez vous connecter
-        <a href="/signUp">ici </a> !
+        <a href="/logIn">ici </a> !
       </p>
     </div>
   </div>
