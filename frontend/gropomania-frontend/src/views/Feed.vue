@@ -24,10 +24,16 @@
               Si vous souhaitez publier un message, c'est par
               <a href="/JourNal">ici</a>!
             </p>
-            <div v-bind="message in messages" class="message">
-              {{ getMessages }}:
+            <div
+              v-bind="(message, index) in messages"
+              :key="messages.id"
+              class="message"
+            >
+              <p v-if="isAdmin || messages.userId == id" class="usermessage">
+                {{ messages }}
+              </p>
               <span class="lighten">
-                <span v-html="id"></span>{{ userId }}
+                <span v-text="message"></span>
               </span>
             </div>
           </div>
@@ -39,6 +45,7 @@
 
   <script>
 import axios from "axios";
+import router from "../router";
 // import "../main.css";
 
 /*axios.defaults.headers.common["Authorization"] = `token ${localStorage.getItem(
@@ -48,24 +55,24 @@ export default {
   name: "JourNal",
   data() {
     return {
-      messages: [],
-      id: "",
-      nom: "",
-      prenom: "",
-      message: "",
-      image: "",
+      messages: null,
     };
   },
+  async created() {
+    this.messages = await axios
+      .get("http://localhost:3000/api/messages/all", {
+        headers: {
+          "Content-Type": "application/json",
+          "Access-Control-Allow-Origin": "http://localhost:8080",
+        },
+      })
+      .then((response) => (this.messages = response.data.list))
+      .catch((error) => console.log(error));
+  },
   methods: {
-    getMessages: function () {
-      axios
-        .get("http://localhost:3000/api/messages/all", {
-          headers: {
-            "Content-Type": "application/json",
-            "Access-Control-Allow-Origin": "http://localhost:8080",
-          },
-        })
-        .then((response) => (this.messages = response.data));
+    localClear() {
+      localStorage.clear();
+      router.push({ path: "/" });
     },
   },
 };

@@ -29,7 +29,7 @@
     <div class="explanation">
       <p>
         Vous ne possédez pas de compte ? Vous pouvez vous inscrire
-        <a href="/signUp">ici </a> !
+        <a href="/">ici </a> !
       </p>
     </div>
   </div>
@@ -73,8 +73,7 @@ export default {
           localStorage.setItem("prenom", res.data.prenom);
           localStorage.setItem("token", res.data.token);
           window.alert("La connexion a réussie");
-          //this.$router.push({ name: "JourNal" });
-          window.location.href = "/JourNal";
+          window.location.href = "/Feed";
         })
         .catch((error) => {
           this.isInvalid = true;
