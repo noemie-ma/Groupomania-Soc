@@ -30,7 +30,12 @@
               >
 Ecrivez un message ici</textarea
               ><br />
-              <input type="hidden" v-model="image" name="MAX_FILE_SIZE" />
+              <input
+                type="hidden"
+                @change="pics()"
+                v-model="image"
+                name="MAX_FILE_SIZE"
+              />
 
               <input type="file" /><br />
               <router-link to="/Feed">
@@ -96,6 +101,10 @@ export default {
         .catch((error) => {
           alert(error.message);
         });
+    },
+    pics() {
+      this.file = this.$refs.file.files[0];
+      this.newImage = URL.createObjectURL(this.file);
     },
     commentPage(m) {
       console.log(m);
