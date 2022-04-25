@@ -18,7 +18,7 @@ exports.findAllMessages = (req, res, next) => {
         return Object.assign(
           {},
           {
-            id: message.id,
+            //id: message.id,
             UserId: message.userId,
             createdAt: message.createdAt,
             message: message.message,

@@ -24,21 +24,22 @@
               Si vous souhaitez publier un message, c'est par
               <a href="/JourNal">ici</a>!
             </p>
-            <div class="cards">
-              <div class="message-header">
-                <div class="message-header-left">
-                  <img src="" alt="" />
-                </div>
-                <div class="message-header-right">
-                  <p>{{ messages.UserId }}</p>
-                  <p>{{ messages.CreatedAt }}</p>
-                </div>
-              </div>
-              <div class="message-content">
-                <p>{{ messages.message }}</p>
-              </div>
-              {{ messages }}
-            </div>
+          </div>
+          <div class="messages-feed">
+            <table style="border: 1px solid #ffffff">
+              <thead style="border: 1px solid #ffffff">
+                <td>Identifiant utilisateur</td>
+                <td>Date et heure de création</td>
+                <td>Image</td>
+                <td>Message</td>
+              </thead>
+              <tr v-for="item in list" v-bind:key="item.id">
+                <td>{{ item.UserId }}</td>
+                <td>{{ item.createdAt }}</td>
+                <td>{{ item.image }}</td>
+                <td>{{ item.message }}</td>
+              </tr>
+            </table>
           </div>
         </div>
       </article>
@@ -58,14 +59,15 @@ export default {
   name: "JourNal",
   data() {
     return {
-      messages: [],
+      list: [],
+    };
+    /*messages: [],
       UserId: "userId",
       createdAt: "createdAt",
       message: "message",
-      image: "null",
-    };
+      image: "null",*/
   },
-  async created() {
+  /*async created() {
     this.messages = await axios
       .get("http://localhost:3000/api/messages/all", {
         headers: {
@@ -76,8 +78,13 @@ export default {
       .then((response) => (this.messages = response.data.list))
       .catch((error) => {
         console.log(error);
-        this.errored = true;
       });
+  },*/
+  mounted() {
+    axios.get("http://localhost:3000/api/messages/all").then((res) => {
+      this.list = res.data.list;
+      console.warn(res.data.list);
+    });
   },
   methods: {
     localClear() {
