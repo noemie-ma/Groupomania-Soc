@@ -74,7 +74,7 @@ export default {
           console.log(response.data);
 
           if (response.status == 201) {
-            window.location.href = "/JourNal";
+            window.location.href = "/Feed";
             alert("L'inscription est réussie ! Bienvenue parmi nous !");
           } else {
             alert(

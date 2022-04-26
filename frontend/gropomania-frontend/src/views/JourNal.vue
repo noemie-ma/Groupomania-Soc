@@ -35,6 +35,7 @@ Ecrivez un message ici</textarea
                 @change="pics()"
                 v-model="image"
                 name="MAX_FILE_SIZE"
+                class="imgbutton"
               />
 
               <input type="file" /><br />
@@ -42,7 +43,7 @@ Ecrivez un message ici</textarea
                 <button
                   type="submit"
                   v-on:click="createMessage()"
-                  class="btn btn-primary"
+                  class="submitbtn"
                 >
                   Publier
                 </button>
@@ -60,9 +61,6 @@ import axios from "axios";
 import router from "../router";
 // import "../main.css";
 
-axios.defaults.headers.common["Authorization"] = `token ${localStorage.getItem(
-  "token"
-)}`;
 export default {
   name: "JourNal",
   data() {
@@ -77,6 +75,7 @@ export default {
   },
   methods: {
     createMessage: function () {
+      const token = localStorage.getItem("token");
       axios
         .post("http://localhost:3000/api/messages/create", {
           message: this.message,
@@ -84,6 +83,7 @@ export default {
           headers: {
             "Content-Type": "application/json",
             "Access-Control-Allow-Origin": "http://localhost:8080",
+            Authorization: "Bearer" + token,
           },
         })
         .then((response) => {

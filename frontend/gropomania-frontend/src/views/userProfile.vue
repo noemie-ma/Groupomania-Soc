@@ -17,18 +17,20 @@
             </li>
           </nav>
         </div>
-        <div class="profile">
-          <h1 class="title">
-            Bienvenue sur votre profil {{ prenom }} {{ nom }} !
-          </h1>
-          <p>
-            Si vous souhaitez changer des détails sur votre profil, c'est
-            ci-dessous.
-          </p>
-          <p>{{ email }} {{ bio }} {{ createdAt }}</p>
-          <div class="options">
-            <button @click="update()">Modifier mon compte</button>
-            <button @click="deleteLocalStorage()">Supprimer mon compte</button>
+        <div class="card">
+          <div class="container">
+            <h4>Bienvenue sur votre profil {{ prenom }} {{ nom }} !</h4>
+            <p>
+              <img src="public/img/profil.png" alt="Photo de profil" /><br />
+              Vous êtes membre depuis le {{ createdAt }}
+            </p>
+            <p>
+              Vous voulez nous quitter ? Quelle tristesse quand même ! A la
+              revoyure.
+            </p>
+            <button class="delbtn" @click="deleteLocalStorage()">
+              Supprimer mon compte
+            </button>
           </div>
         </div>
       </div>
@@ -47,37 +49,30 @@ export default {
       nom: "",
       prenom: "",
       email: "",
-      bio: "",
       createdAt: "",
     };
   },
-  created() {
+  async created() {
     let id = localStorage.getItem("id");
     axios
       .get("http://localhost:3000/api/users/" + id, {
         headers: {
           "Content-Type": "application/json",
           "Access-Control-Allow-Origin": "http://localhost:8080",
+          Authorization: "Bearer " + localStorage.getItem("token"),
         },
       })
-      .then((response) => (this.user = response.data));
+      .then((res) => {
+        this.nom = res.data.nom;
+        (this.prenom = res.data.prenom),
+          (this.email = res.data.email),
+          (this.createdAt = res.data.createdAt);
+      })
+      .catch((error) => {
+        console.log(error);
+      });
   },
   methods: {
-    update() {
-      let id = localStorage.getItem("id");
-      axios.put(
-        "http://localhost:3000/api/users/" + id,
-        {
-          nom: this.nom,
-          prenom: this.prenom,
-          email: this.email,
-          bio: this.bio,
-        },
-        {
-          headers: { Authorization: "Bearer " + localStorage.getItem("token") },
-        }
-      );
-    },
     deleteMyAccount(n) {
       let id = n;
       let confirmUserDeletion = confirm(

@@ -73,7 +73,7 @@ export default {
           localStorage.setItem("prenom", res.data.prenom);
           localStorage.setItem("token", res.data.token);
           window.alert("La connexion a réussie");
-          window.location.href = "/Feed";
+          window.location.href = "/JourNal";
         })
         .catch((error) => {
           this.isInvalid = true;
