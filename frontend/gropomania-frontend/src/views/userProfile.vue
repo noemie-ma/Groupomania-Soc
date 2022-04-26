@@ -54,12 +54,13 @@ export default {
   },
   async created() {
     let id = localStorage.getItem("id");
+    const token = localStorage.getItem("token");
     axios
       .get("http://localhost:3000/api/users/" + id, {
         headers: {
           "Content-Type": "application/json",
           "Access-Control-Allow-Origin": "http://localhost:8080",
-          Authorization: "Bearer " + localStorage.getItem("token"),
+          Authorization: "Bearer " + token,
         },
       })
       .then((res) => {
