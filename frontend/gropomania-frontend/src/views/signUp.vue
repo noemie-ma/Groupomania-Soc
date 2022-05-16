@@ -50,10 +50,10 @@ export default {
   name: "signUp",
   data() {
     return {
-      inputNom: "inputNom",
-      inputPrenom: "inputPrenom",
-      inputEmail: "inputEmail",
-      inputPassword: "inputPassword",
+      inputNom: "",
+      inputPrenom: "",
+      inputEmail: "",
+      inputPassword: "",
       invalid: false,
     };
   },

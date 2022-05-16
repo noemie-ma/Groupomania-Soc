@@ -45,8 +45,8 @@ export default {
   name: "logIn",
   data() {
     return {
-      inputEmail: "inputEmail",
-      inputPassword: "inputPassword",
+      inputEmail: "",
+      inputPassword: "",
       isInvalid: false,
     };
   },
@@ -73,7 +73,7 @@ export default {
           localStorage.setItem("prenom", res.data.prenom);
           localStorage.setItem("token", res.data.token);
           window.alert("La connexion a réussie");
-          window.location.href = "/JourNal";
+          window.location.href = "/Feed";
         })
         .catch((error) => {
           this.isInvalid = true;

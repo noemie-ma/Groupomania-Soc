@@ -36,7 +36,7 @@ exports.createMessage = (req, res, next) => {
   const token = req.headers.authorization.split(" ")[1];
   const decodedToken = jwt.verify(token, "RANDOM_TOKEN_SECRET");
   const userId = decodedToken.userId;
-  let image = "";
+  let image = [];
   if (req.file) {
     image = `${req.protocol}://${req.get("host")}/images/${req.file.filename}`;
   }

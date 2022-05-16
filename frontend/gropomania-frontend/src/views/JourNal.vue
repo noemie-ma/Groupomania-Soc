@@ -105,6 +105,7 @@ export default {
     pics() {
       this.file = this.$refs.file.files[0];
       this.newImage = URL.createObjectURL(this.file);
+      console.log(this.newImage);
     },
     commentPage(m) {
       console.log(m);

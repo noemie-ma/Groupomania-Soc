@@ -36,7 +36,9 @@
               <tr v-for="item in list" v-bind:key="item.id">
                 <td>{{ item.UserId }}</td>
                 <td>{{ item.createdAt }}</td>
-                <td>{{ item.image }}</td>
+                <td>
+                  <img :src="item.image" />
+                </td>
                 <td>{{ item.message }}</td>
               </tr>
             </table>
@@ -57,6 +59,7 @@ export default {
   data() {
     return {
       list: [],
+      image: Object,
     };
   },
   mounted() {
